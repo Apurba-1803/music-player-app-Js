@@ -8,6 +8,9 @@ This is a basic web application where users can:
 2.Add individual songs to a selected playlist
 3.Switch between playlists to view their respective songs
 4.Simple and clean UI with dynamic DOM manipulation using JavaScript
+5.Choose Songs based on the genre.
+6.Play previous or next song. 
+7.Toggle between dark or light mode
 
 🛠️ Technologies Used
 HTML
