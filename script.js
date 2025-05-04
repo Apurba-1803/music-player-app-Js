@@ -49,6 +49,23 @@ function showSongs() {
   });
 }
 
+
+
+songsDropDown.addEventListener("change", showSongs);
+window.addEventListener("DOMContentLoaded", showSongs);
+
+let songData = data[0];
+
+//When a song is clicked
+function songClicked(event) {
+  const cardElement = event.target.closest(".song-title-card"); 
+  console.log(cardElement);
+
+  songData = JSON.parse(cardElement.dataset.song);
+
+  displaySong(songData);
+}
+
 //display song on middle section
 function displaySong(song) {
   console.log("song in displaySong", song);
@@ -67,20 +84,8 @@ function displaySong(song) {
   audio.play();
 }
 
-songsDropDown.addEventListener("change", showSongs);
-window.addEventListener("DOMContentLoaded", showSongs);
 
-let songData = data[0];
-
-function songClicked(event) {
-  const cardElement = event.target.closest(".song-title-card"); 
-  console.log(cardElement);
-
-  songData = JSON.parse(cardElement.dataset.song);
-
-  displaySong(songData);
-}
-
+//next button is clicked
 nextBtn.onclick = () => {
   if (songData) {
     playNextSong(songData);
@@ -104,6 +109,7 @@ function playNextSong(currentSongData) {
   }
 }
 
+//previous button is clicked
 prevBtn.onclick = () => {
   if (songData) {
     playPrevSong(songData);
@@ -126,6 +132,7 @@ function playPrevSong(currentSongData) {
 }
 songTitleCard.addEventListener("click", songClicked);
 
+//add to playlist button is clicked
 addToPlaylistButton.onclick = () =>{
   if(songData){
    addSongToPlaylist(songData)
@@ -154,6 +161,8 @@ function createPlaylistClicked(){
 }
 
 createPlaylist.addEventListener("click", createPlaylistClicked)
+
+//when playlist is clicked to add the songs 
 
 function playlistClicked(playlistName){
   selectedPlaylist = playlistName;
