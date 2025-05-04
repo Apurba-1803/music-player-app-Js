@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="style.css" />
+    <script
+      src="https://kit.fontawesome.com/91935acc6e.js"
+      crossorigin="anonymous"
+    ></script>
+    <title>Music Player Platform</title>
+  </head>
+  <body>
+    <header>
+      <label class="switch">
+        <input type="checkbox" id="toggle-style" />
+        <span class="slider round"></span>
+        <span id="mode-text">Dark</span>
+      </label>
+      <h1 class="heading">Music Player</h1>
+    </header>
+    <div class="container">
+      <section class="section">
+        <div class="genre">
+          <label for="songs" class="songs-label">Filter by Genre:</label>
+
+          <select name="songs" id="songs">
+            <option value="All" selected>All</option>
+            <option value="Rock">Rock</option>
+            <option value="Pop">Pop</option>
+            <option value="Hip-Hop">Hip-Hop</option>
+          </select>
+
+          <div class="all-songs">
+            <h1>All Songs</h1>
+            <div class="songs-list" id="song-title-card"></div>
+          </div>
+        </div>
+      </section>
+      <section class="middle-section section">
+        <div class="song-display">
+          <div id="image_container">
+            <img src="assets/shape_of_you.jpeg" class="song-image" />
+          </div>
+          <div class="song-title" id="song-title">Shape of You</div>
+          <div class="singer" id="singer">Ed Shreen</div>
+        </div>
+        <div class="audio-display">
+          <audio controls class="audio" id="audio">
+            <source src="assets/Shape_Of_You.mp3" type="audio/mpeg" />
+          </audio>
+          <button class="buttons" id = "previous_button">
+            <i class="fas fa-angle-double-left"></i>
+          </button>
+          <button class="buttons" id = "next_button">
+            <i class="fas fa-angle-double-right"></i>
+          </button>
+          <button class="buttons add" id="AddToPlayList">
+            Add To PlayList
+          </button>
+        </div>
+      </section>
+      <div class="right-div">
+      <div class="search">
+          <input type="text" placeholder="Enter playlist name" class="createField" id="createField">
+          <button class="buttons createPlaylist" id="createPlaylist">Create PlayList</button>
+      </div>
+      <section class="right-section">
+        <h1 class="playlistHeading ">Current Playlist</h1>
+        <div id="CurrentPlaylist"></div>
+        <h1 class="playlistHeading" >All Playlists</h1>
+        <div  id="AllPlaylists"></div>
+      </section>
+    </div>
+  </div>
+
+    <script type="module" src="script.js"></script>
+  </body>
+</html>

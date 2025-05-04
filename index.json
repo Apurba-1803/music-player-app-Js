@@ -1,0 +1,57 @@
+ [
+    { 
+      "id":1,
+      "cardName": "Shape of you - Ed Shreen",
+      "title" : "Shape of you ",
+      "singer": "Ed Shreen",
+      "image": "assets/shape_of_you.jpeg",
+      "mp3": "assets/Shape_Of_You.mp3",
+      "genre": "Pop"
+    },
+    {
+      "id":2,
+      "cardName": "Sugar - Maroon ",
+      "title" : "Sugar ",
+      "singer": "Maroon",
+      "image": "assets/sugar.jpg",
+      "mp3": "assets/Sugar-Maroon5.mp3",
+      "genre": "Hip-Hop"
+    },
+    {
+      "id":3,
+      "cardName": "Locked Away - R. City",
+      "title" : "Locked Away ",
+      "singer": "R. City",
+      "image": "assets/Locked_Away.jpg",
+      "mp3": "assets/Locked_Away.mp3",
+      "genre": "Hip-Hop"
+    },
+    {
+      "id":4,
+      "cardName": "All of Me - John Legend",
+      "title" : "All of Me ",
+      "singer": "John Legend",
+      "image": "assets/All_Of_Me.jpg",
+      "mp3": "assets/All_Of_Me.mp3",
+      "genre": "Pop"
+    },
+    {
+      "id":5,
+      "cardName": "Someone Like You - Adele ",
+      "title" : "Someone Like You  ",
+      "singer": "Adele",
+      "image": "assets/Someone_Like_You.jpg",
+      "mp3": "assets/someone_like_you.mp3",
+      "genre": "Pop"
+    },
+    {
+      "id":6,
+      "cardName": "Wonderwall - Oasis",
+      "title" : "Wonderwall ",
+      "singer": "Oasis",
+      "image": "assets/wonderwall.jpg",
+      "mp3": "assets/wonderwall.mp3",
+      "genre": "Rock"
+    }
+  ]
+  
